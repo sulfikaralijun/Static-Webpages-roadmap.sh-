@@ -107,10 +107,14 @@ nav a {
 }
 
 .articles {
-	width: 100%;
+	width: 1246px;
 	margin-top: 110px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
 }
 .articles article {
+  position: relative;
 	width: 390px;
 	height: 439px;
 	border-radius: 22px;
@@ -118,15 +122,12 @@ nav a {
 	background: #fff;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	padding: 26px 26px 30px 26px;
+	padding: 26px 26px 29px 26px;
 }
 .articles .thumbnail {
 	width: 337.08px;
 	height: 160px;
 	border-radius: 22px;
-	background: url("/src/assets/images/image01.png"),
-		lightgray 50% / cover no-repeat;
 }
 article h3 {
 	color: #0f1217;
@@ -147,10 +148,10 @@ article p {
 	margin-top: 13px;
 }
 article .article-footer {
-	display: flex;
-	align-self: start;
+	position: absolute;
+  bottom: 29px;
+  left: 26px;
 	gap: 24px;
-	margin-top: 24px;
 	color: #0f1217;
 	font-family: Poppins;
 	font-size: 16px;
