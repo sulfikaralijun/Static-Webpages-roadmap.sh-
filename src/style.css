@@ -12,6 +12,8 @@ body {
 	max-width: 1236px;
 	margin: 0 auto;
 	padding-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
 .container .header {
 	width: 100%;
@@ -23,7 +25,7 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-  font-family: Poppins;
+	font-family: Poppins;
 }
 .header-top > a {
 	color: #fff;
@@ -56,7 +58,7 @@ nav a {
 	color: #ff7575;
 	font-size: 71px;
 	font-style: italic;
-  font-family: Recursive;
+	font-family: Recursive;
 	font-weight: 400;
 	line-height: normal;
 	margin-top: 40px;
@@ -65,7 +67,7 @@ nav a {
 	color: #fff;
 	font-size: 29px;
 	font-style: normal;
-  font-family: Poppins;
+	font-family: Poppins;
 	font-weight: 400;
 	line-height: normal;
 	margin-top: 17px;
@@ -100,21 +102,21 @@ nav a {
 .categories .lists span {
 	color: #909090;
 	font-size: 27px;
-  font-family: Recursive;
+	font-family: Recursive;
 	font-style: italic;
 	font-weight: 400;
 	line-height: normal;
 }
 
-.articles {
+.container .articles {
 	width: 1246px;
 	margin-top: 110px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 37px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 37px;
 }
 .articles article {
-  position: relative;
+	position: relative;
 	width: 390px;
 	height: 439px;
 	border-radius: 22px;
@@ -149,8 +151,8 @@ article p {
 }
 article .article-footer {
 	position: absolute;
-  bottom: 29px;
-  left: 26px;
+	bottom: 29px;
+	left: 26px;
 	gap: 24px;
 	color: #0f1217;
 	font-family: Poppins;
@@ -158,4 +160,38 @@ article .article-footer {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+}
+
+.pagination {
+	display: flex;
+	align-items: center;
+	gap: 43px;
+  margin-top: 115px;
+  align-self: center;
+}
+.pagination a {
+	text-decoration: none;
+	color: #909090;
+	font-family: Recursive;
+	font-size: 25px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: normal;
+}
+.pagination .prev,
+.pagination .next {
+	color: #909090;
+	font-family: Recursive;
+	font-size: 25px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: normal;
+}
+.pagination .pagination-number {
+  display: flex;
+  gap: 30px;
+}
+.pagination-number a.active {
+  color: #FF7575;
+  font-weight: 700;
 }
