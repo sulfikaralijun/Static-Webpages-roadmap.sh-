@@ -67,3 +67,15 @@ nav a {
 	line-height: normal;
   margin-top: 17px;
 }
+
+.categories {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+.categories .icons {
+  display: flex;
+  gap: 13px;
+}
