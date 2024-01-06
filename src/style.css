@@ -15,6 +15,9 @@ body {
 }
 .container .header {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 70px;
 }
 .header .header-top {
 	width: 100%;
@@ -38,5 +41,29 @@ nav a {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-  text-decoration: none;
+	text-decoration: none;
+}
+
+.header .header-bottom {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header-bottom h1 {
+	color: #ff7575;
+	font-size: 71px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: normal;
+	margin-top: 40px;
+}
+.header-bottom p {
+	color: #fff;
+	font-size: 29px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+  margin-top: 17px;
 }
