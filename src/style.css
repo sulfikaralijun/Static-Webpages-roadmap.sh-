@@ -65,17 +65,40 @@ nav a {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-  margin-top: 17px;
+	margin-top: 17px;
 }
 
 .categories {
-  width: 100%;
-  margin-top: 100px;
-  display: flex;
-  align-items: center;
-  padding: 15px 0;
+  position: relative;
+	width: 100%;
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+	padding: 17px 0;
+}
+.categories::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 116px;
+  background: linear-gradient(270deg, #232830 0.01%, rgba(35, 40, 48, 0.00) 87.5%);
 }
 .categories .icons {
-  display: flex;
-  gap: 13px;
+	display: flex;
+	gap: 13px;
 }
+.categories .lists {
+  margin-left: 40px;
+  display: flex;
+  gap: 36px;
+}
+.categories .lists span {
+	color: #909090; 
+	font-size: 27px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: normal;
+}
+
