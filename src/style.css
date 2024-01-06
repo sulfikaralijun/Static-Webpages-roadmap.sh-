@@ -23,6 +23,7 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+  font-family: Poppins;
 }
 .header-top > a {
 	color: #fff;
@@ -55,6 +56,7 @@ nav a {
 	color: #ff7575;
 	font-size: 71px;
 	font-style: italic;
+  font-family: Recursive;
 	font-weight: 400;
 	line-height: normal;
 	margin-top: 40px;
@@ -63,13 +65,14 @@ nav a {
 	color: #fff;
 	font-size: 29px;
 	font-style: normal;
+  font-family: Poppins;
 	font-weight: 400;
 	line-height: normal;
 	margin-top: 17px;
 }
 
 .categories {
-  position: relative;
+	position: relative;
 	width: 100%;
 	margin-top: 100px;
 	display: flex;
@@ -77,32 +80,81 @@ nav a {
 	padding: 17px 0;
 }
 .categories::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 116px;
-  background: linear-gradient(270deg, #232830 0.01%, rgba(35, 40, 48, 0.00) 87.5%);
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 116px;
+	background: linear-gradient(270deg, #232830 0.01%, rgba(35, 40, 48, 0) 87.5%);
 }
 .categories .icons {
 	display: flex;
 	gap: 13px;
 }
 .categories .lists {
-  margin-left: 40px;
-  display: flex;
-  gap: 36px;
+	margin-left: 40px;
+	display: flex;
+	gap: 36px;
 }
 .categories .lists span {
-	color: #909090; 
+	color: #909090;
 	font-size: 27px;
+  font-family: Recursive;
 	font-style: italic;
 	font-weight: 400;
 	line-height: normal;
 }
 
 .articles {
-  width: 100%;
-  margin-top: 110px;
+	width: 100%;
+	margin-top: 110px;
+}
+.articles article {
+	width: 390px;
+	height: 439px;
+	border-radius: 22px;
+	border: 1px solid #252930;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 26px 26px 30px 26px;
+}
+.articles .thumbnail {
+	width: 337.08px;
+	height: 160px;
+	border-radius: 22px;
+	background: url("/src/assets/images/image01.png"),
+		lightgray 50% / cover no-repeat;
+}
+article h3 {
+	color: #0f1217;
+	font-family: Poppins;
+	font-size: 19px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin-top: 33px;
+}
+article p {
+	color: #0f1217;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-top: 13px;
+}
+article .article-footer {
+	display: flex;
+	align-self: start;
+	gap: 24px;
+	margin-top: 24px;
+	color: #0f1217;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
