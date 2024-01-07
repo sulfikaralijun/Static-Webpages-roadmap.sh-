@@ -12,8 +12,8 @@ body {
 	max-width: 1236px;
 	margin: 0 auto;
 	padding-top: 40px;
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 .container .header {
 	width: 100%;
@@ -166,8 +166,8 @@ article .article-footer {
 	display: flex;
 	align-items: center;
 	gap: 43px;
-  margin-top: 115px;
-  align-self: center;
+	margin-top: 115px;
+	align-self: center;
 }
 .pagination a {
 	text-decoration: none;
@@ -188,10 +188,42 @@ article .article-footer {
 	line-height: normal;
 }
 .pagination .pagination-number {
-  display: flex;
-  gap: 30px;
+	display: flex;
+	gap: 30px;
 }
 .pagination-number a.active {
-  color: #FF7575;
-  font-weight: 700;
+	color: #ff7575;
+	font-weight: 700;
+}
+
+footer {
+	margin-top: 187px;
+}
+footer a.logo {
+	text-decoration: none;
+	color: #fff;
+	font-family: poppins;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+footer a.left-nick {
+	text-decoration: none;
+	color: #fff;
+	font-family: Poppins;
+	font-size: 19px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+footer a.right-nick {
+	text-decoration: none;
+	color: #fff;
+	font-family: Source Sans Pro;
+	font-size: 19px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
 }
