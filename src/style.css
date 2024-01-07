@@ -190,19 +190,23 @@ article .article-footer {
 }
 .pagination .pagination-number {
 	display: flex;
-	gap: 30px;
+	gap: 15px;
+}
+.pagination-number a {
+	padding: 8px 14px;
+	text-align: center;
 }
 .pagination-number a.active {
 	color: #ff7575;
 	font-weight: 700;
 	position: relative;
-	background: #4699e0;
-	padding: 5px 10px;
 }
 .pagination-number a.active::before {
 	position: absolute;
+	top: 0;
+	left: 3px;
 	content: '';
-	width: 54px;
+	width: 100%;
 	height: 3px;
 	background-color: #FF7575;
 }
