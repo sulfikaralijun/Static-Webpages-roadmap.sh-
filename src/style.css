@@ -72,6 +72,9 @@ nav a {
 	line-height: normal;
 	margin-top: 17px;
 }
+main {
+	border-top: 3px solid rgba(75, 75, 75,.2);
+}
 
 .categories {
 	position: relative;
