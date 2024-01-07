@@ -126,6 +126,7 @@ nav a {
 	display: flex;
 	flex-direction: column;
 	padding: 26px 26px 29px 26px;
+	cursor: pointer;
 }
 .articles .thumbnail {
 	width: 337.08px;
