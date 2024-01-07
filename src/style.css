@@ -195,6 +195,16 @@ article .article-footer {
 .pagination-number a.active {
 	color: #ff7575;
 	font-weight: 700;
+	position: relative;
+	background: #4699e0;
+	padding: 5px 10px;
+}
+.pagination-number a.active::before {
+	position: absolute;
+	content: '';
+	width: 54px;
+	height: 3px;
+	background-color: #FF7575;
 }
 
 footer {
@@ -213,6 +223,7 @@ footer a {
 }
 footer a.logo {
 	font-size: 30px;
+	margin-right: 16px;
 }
 footer a.left-nick,
 footer a.right-nick {
