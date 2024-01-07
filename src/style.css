@@ -12,6 +12,7 @@ body {
 	max-width: 1236px;
 	margin: 0 auto;
 	padding-top: 40px;
+	padding-bottom: 127px;
 	display: flex;
 	flex-direction: column;
 }
@@ -198,17 +199,9 @@ article .article-footer {
 
 footer {
 	margin-top: 187px;
+	position: relative;
 }
-footer a.logo {
-	text-decoration: none;
-	color: #fff;
-	font-family: poppins;
-	font-size: 30px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: normal;
-}
-footer a.left-nick {
+footer a {
 	text-decoration: none;
 	color: #fff;
 	font-family: Poppins;
@@ -216,14 +209,20 @@ footer a.left-nick {
 	font-style: normal;
 	font-weight: 600;
 	line-height: normal;
+	width: 100%;
+}
+footer a.logo {
+	font-size: 30px;
+}
+footer a.left-nick,
+footer a.right-nick {
+	width: 130px;
+	border-radius: 5px;
+	background: #4699e0;
+	padding: 5px 13px;
 }
 
 footer a.right-nick {
-	text-decoration: none;
-	color: #fff;
-	font-family: Source Sans Pro;
-	font-size: 19px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: normal;
+	float: right;
+	width: 250px;
 }
